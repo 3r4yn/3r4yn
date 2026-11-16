@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 356" width="400" height="356" role="img" aria-labelledby="t d">
+<title id="t">Hola, soy Brayan</title>
+<desc id="d">Desarrollador web junior en Madrid. Busco prácticas y primer empleo. El dibujo imita el frontal de un switch de red con varios LED encendidos.</desc>
+<style>
+text { font-family: "Helvetica Neue", Helvetica, Arial, "Liberation Sans", sans-serif; fill: #F2F4FF }
+.verde { fill: #45E08B }
+.ambar { fill: #FFB52E }
+.apagado { fill: #3A3F96 }
+/* Los LED ámbar parpadean como los de actividad de un switch */
+.act { animation: actividad 1.9s steps(1, end) infinite }
+@keyframes actividad { 0%, 18%, 44%, 70% { opacity: 1 } 10%, 30%, 58%, 86% { opacity: .15 } }
+/* El LED de estado respira despacio */
+.estado { animation: latido 3s ease-in-out infinite }
+@keyframes latido { 0%, 100% { opacity: .18 } 50% { opacity: .5 } }
+@media (prefers-reduced-motion: reduce) { .act, .estado { animation: none } }
+</style>
+<defs>
+<g id="rj45">
+<rect width="24" height="22" rx="2.5" fill="#14163F"/>
+<path d="M3,3h18v11h-4.5v4.5h-9V14H3Z" fill="#07081C"/>
+<path d="M6,3v4.5M8.4,3v4.5M10.8,3v4.5M13.2,3v4.5M15.6,3v4.5M18,3v4.5" stroke="#D2AD5A" stroke-opacity=".55" stroke-width=".9"/>
+</g>
+<g id="libre">
+<use href="#rj45"/>
+<rect x="2" y="-7" width="7" height="3.5" rx="1" class="apagado"/>
+<rect x="15" y="-7" width="7" height="3.5" rx="1" class="apagado"/>
+</g>
+<g id="enlace">
+<use href="#rj45"/>
+<rect x="2" y="-7" width="7" height="3.5" rx="1" class="verde"/>
+<rect x="15" y="-7" width="7" height="3.5" rx="1" class="apagado"/>
+</g>
+</defs>
+<path fill="#262A78" fill-rule="evenodd" d="M10,0H390a10,10 0 0 1 10,10V346a10,10 0 0 1 -10,10H10a10,10 0 0 1 -10,-10V10a10,10 0 0 1 10,-10ZM9,26a5,5 0 0 1 10,0v12a5,5 0 0 1 -10,0ZM9,312a5,5 0 0 1 10,0v12a5,5 0 0 1 -10,0ZM381,26a5,5 0 0 1 10,0v12a5,5 0 0 1 -10,0ZM381,312a5,5 0 0 1 10,0v12a5,5 0 0 1 -10,0Z"/>
+<path d="M10,.5H390" stroke="#fff" stroke-opacity=".16"/>
+<path d="M10,355.5H390" stroke="#000" stroke-opacity=".35"/>
+<path d="M28.5,0V356M372.5,0V356" stroke="#14163F" stroke-opacity=".7"/>
+<path d="M29.5,0V356M371.5,0V356" stroke="#fff" stroke-opacity=".07"/>
+<text x="43" y="96" font-size="62" font-weight="700" letter-spacing="-1.5" textLength="262.1" lengthAdjust="spacingAndGlyphs">Hola, soy</text>
+<text x="43" y="158" font-size="62" font-weight="700" letter-spacing="-1.5" textLength="201.2" lengthAdjust="spacingAndGlyphs">Brayan</text>
+<text x="45" y="198" font-size="22" textLength="238.5" lengthAdjust="spacingAndGlyphs">Desarrollador web junior</text>
+<text x="45" y="225" font-size="22" textLength="97.8" lengthAdjust="spacingAndGlyphs">en Madrid</text>
+<circle cx="52" cy="258" r="10" class="verde estado" opacity=".3"/>
+<circle cx="52" cy="258" r="5" class="verde"/>
+<text x="69" y="263" font-size="15" font-weight="700" textLength="235.9" lengthAdjust="spacingAndGlyphs">Busco prácticas y primer empleo</text>
+<use href="#enlace" x="45" y="302"/>
+<use href="#enlace" x="73" y="302"/>
+<use href="#enlace" x="101" y="302"/>
+<use href="#enlace" x="129" y="302"/>
+<use href="#libre" x="157" y="302"/>
+<use href="#enlace" x="208" y="302"/>
+<use href="#libre" x="236" y="302"/>
+<use href="#libre" x="264" y="302"/>
+<use href="#enlace" x="292" y="302"/>
+<use href="#enlace" x="320" y="302"/>
+<rect x="60" y="295" width="7" height="3.5" rx="1" class="ambar act" style="animation-duration:1.9s"/>
+<rect x="144" y="295" width="7" height="3.5" rx="1" class="ambar act" style="animation-duration:2.7s;animation-delay:-0.8s"/>
+<rect x="335" y="295" width="7" height="3.5" rx="1" class="ambar act" style="animation-duration:1.3s;animation-delay:-0.4s"/>
+</svg>
